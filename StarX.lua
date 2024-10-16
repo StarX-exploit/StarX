@@ -21,7 +21,7 @@ local ismyautoparryspamming
 local local_player = Players.LocalPlayer
 local camera = workspace.CurrentCamera
 local standalone = false
-print("Modules By Synthia")
+print("Crate By Lunar & CodeE4X")
 
 local originalParryRemote
 local originalResolveParryRemote 
@@ -290,7 +290,7 @@ IndercanotTextBlah.Position = UDim2.new(0.164000005, 0, 0.326666653, 0)
 IndercanotTextBlah.Selectable = false
 IndercanotTextBlah.Size = UDim2.new(0.667999983, 0, 0.346666664, 0)
 IndercanotTextBlah.Font = Enum.Font.GothamBold
-IndercanotTextBlah.Text = "Fade"
+IndercanotTextBlah.Text = "Spam"
 IndercanotTextBlah.TextColor3 = Color3.fromRGB(255, 255, 255)
 IndercanotTextBlah.TextScaled = true
 IndercanotTextBlah.TextSize = 24.000
@@ -1000,12 +1000,13 @@ local NoHyper = loadstring(game:HttpGet(("https://raw.githubusercontent.com/3345
 
 NoHyper.set_theme('neverlose') -- [[nohyper , bedol , neverlose, green]]
 
-local Window = NoHyper.new('lunar - Blade ball',"rbxassetid://85808593227580",'Welcome to lunar Blade ball') -- My Logo you can replace it
+local Window = NoHyper.new('Star X - Blade ball',"rbxassetid://85808593227580",'This Is Lunar Remake(not skid)') -- My Logo you can replace it
 Window:NewSize(UDim2.new(0.1,430,0.1,300))
 
-Window:AddYoutube('https://discord.gg/C8fg9xDjat')
-Window:AddWebsite('https://discord.gg/C8fg9xDjat')
-Window:AddDiscord('https://discord.gg/C8fg9xDjat')
+Window:AddYoutube('https://youtube.com/@starx575')
+Window:AddWebsite('https://redhome.carrd.com')
+Window:AddDiscord('https://discord.com/invite/EwARkGncq4')
+Window:AddDiscord('https://discord.gg/pj9Ttfj87b')
 
 local General = Window:NewTab('Main','earth') -- [[Icon: ads list folder earth locked home positon notify close color]]
 local Par = General:NewSection('Parry','','left') -- [left , right]
