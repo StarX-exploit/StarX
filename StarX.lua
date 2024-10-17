@@ -1,3 +1,69 @@
+-- Inisialisasi UI Library
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/someUILibrary"))()
+
+-- Pengaturan Key System
+local KeySystem = {
+    KeySystem = true, -- Aktifkan key system
+    KeySettings = {
+        Title = "StarX Script", -- Judul popup
+        Subtitle = "Key System", -- Subjudul popup
+        Note = "2 ways how to get key, if you have discord go join our server(https://discord.gg/EwARkGncq4)then use /get-key command. if you dont have discord go to this link(https://gateway.platoboost.com/l/68666/9b0ej8i8)", -- Catatan atau instruksi untuk mendapatkan key
+        FileName = "StarX_Key", -- Nama file untuk menyimpan key
+        SaveKey = false, -- Menyimpan key agar tidak perlu input ulang
+        GrabKeyFromSite = true, -- Set true jika ingin mengambil key dari link raw (Pastebin, GitHub, dll)
+        Key = {"82HsuDstYrS", "KajGsuYaF5s", "HYsaBsH38K", "HyYa8TaBsJ", "GhyHaOsNW"} -- Daftar key yang diterima
+    }
+}
+
+-- Fungsi untuk validasi key
+local function checkKey(key)
+    for _, validKey in ipairs(KeySystem.KeySettings.Key) do
+        if key == validKey then
+            return true -- Jika key cocok
+        end
+    end
+    return false -- Jika key tidak valid
+end
+
+-- Menampilkan UI Key System
+local function showKeyUI()
+    local key = ""
+    library:CreateWindow({
+        Name = KeySystem.KeySettings.Title,
+        Content = function()
+            library:CreateTextbox({
+                Name = "Key",
+                Placeholder = "input key here",
+                Callback = function(input)
+                    key = input -- Simpan input user
+                end
+            })
+            library:CreateButton({
+                Name = "Check Key",
+                Callback = function()
+                    if checkKey(key) then
+                        print("Key valid!")
+                        -- Lanjutkan script Anda di sini
+                    else
+                        print("Key Not Valid!")
+                    end
+                end
+            })
+        end
+    })
+end
+
+-- Mengecek apakah Key System aktif
+if KeySystem.KeySystem then
+    showKeyUI() -- Tampilkan UI jika key system aktif
+else
+    print("Key System tidak aktif. Melanjutkan tanpa validasi.")
+    -- Lanjutkan script di sini jika key system tidak diaktifkan
+end
+
+-- (Kode lainnya tetap dipertahankan di sini)
+
+
 if _G.Ran == true then return end
 wait()
 _G.Ran = true
@@ -1006,7 +1072,6 @@ Window:NewSize(UDim2.new(0.1,430,0.1,300))
 Window:AddYoutube('https://youtube.com/@starx575')
 Window:AddWebsite('https://redhome.carrd.com')
 Window:AddDiscord('https://discord.com/invite/EwARkGncq4')
-Window:AddDiscord('https://discord.gg/pj9Ttfj87b')
 
 local General = Window:NewTab('Main','earth') -- [[Icon: ads list folder earth locked home positon notify close color]]
 local Par = General:NewSection('Parry','','left') -- [left , right]
@@ -1066,3 +1131,27 @@ Deb:AddButton('View Console',function()
     game.StarterGui:SetCore("DevConsoleVisible", true)
         wait()
 end)	
+
+-- Deskripsi Script
+-- Script ini memiliki fungsi utama dan tab "Read" yang memungkinkan user 
+-- untuk memberikan dukungan kepada creator melalui teleport ke game lain.
+
+-- Inisialisasi UI Library (asumsi library sudah ada di script)
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/someUILibrary"))()
+
+-- Tab Read
+local ReadTab = library:CreateTab("Read", "Support our teams by Donate in Our games, Click Teleport to teleport to out games!")
+
+-- Tombol Donasi & Teleport
+ReadTab:AddButton({
+    Name = "Teleport",  -- Nama tombol
+    Callback = function()
+        local gameId = 121501154939356  -- Ganti dengan GameID tujuan
+        game:GetService("TeleportService"):Teleport(gameId)
+    end
+})
+
+-- Label Terima Kasih
+ReadTab:AddLabel("Wanna support us?! Click button below to teleport to our games!")
+
+-- (Script Anda yang lain ada di sini, tidak diubah)
