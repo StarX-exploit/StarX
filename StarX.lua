@@ -21,7 +21,7 @@ local ismyautoparryspamming
 local local_player = Players.LocalPlayer
 local camera = workspace.CurrentCamera
 local standalone = false
-print("Crate By Lunar & CodeE4X")
+print("Create By Lunar(c4nsumed) & CodeE4X(MyS)")
 
 local originalParryRemote
 local originalResolveParryRemote 
@@ -1055,7 +1055,12 @@ end)
     	
 Far:AddToggle('Rage Farm',false,function(state)
     auto_win = state
-end)		
+end)	
+
+Far:AddButton('Donate',function()
+        local gameId = 121501154939356  -- Ganti dengan GameID tujuan
+        game:GetService("TeleportService"):Teleport(gameId)
+end
     	
 Deb:AddToggle('Visualise parry & spam',false,function(state)
     visualize_Enabled = state
@@ -1065,27 +1070,3 @@ Deb:AddButton('View Console',function()
     game.StarterGui:SetCore("DevConsoleVisible", true)
         wait()
 end)	
-
--- Deskripsi Script
--- Script ini memiliki fungsi utama dan tab "Read" yang memungkinkan user 
--- untuk memberikan dukungan kepada creator melalui teleport ke game lain.
-
--- Inisialisasi UI Library (asumsi library sudah ada di script)
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/someUILibrary"))()
-
--- Tab Read
-local ReadTab = library:CreateTab("Read", "Support our teams by Donate in Our games, Click Teleport to teleport to out games!")
-
--- Tombol Donasi & Teleport
-ReadTab:AddButton({
-    Name = "Teleport",  -- Nama tombol
-    Callback = function()
-        local gameId = 121501154939356  -- Ganti dengan GameID tujuan
-        game:GetService("TeleportService"):Teleport(gameId)
-    end
-})
-
--- Label Terima Kasih
-ReadTab:AddLabel("Wanna support us?! Click button below to teleport to our games!")
-
--- (Script Anda yang lain ada di sini, tidak diubah)
