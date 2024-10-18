@@ -21,7 +21,7 @@ local ismyautoparryspamming
 local local_player = Players.LocalPlayer
 local camera = workspace.CurrentCamera
 local standalone = false
-print("Create By Lunar(c4nsumed) & CodeE4X(MyS)")
+print("Crate By Lunar(break) & CodeE4X")
 
 local originalParryRemote
 local originalResolveParryRemote 
@@ -206,10 +206,10 @@ function ManualSpam()
     IndercanotTextBlah.Selectable = false
     IndercanotTextBlah.Size = UDim2.new(0.667999983, 0, 0.346666664, 0)
     IndercanotTextBlah.Font = Enum.Font.GothamBold
-    IndercanotTextBlah.Text = "Fade"
+    IndercanotTextBlah.Text = "Spam"
     IndercanotTextBlah.TextColor3 = Color3.fromRGB(255, 255, 255)
     IndercanotTextBlah.TextScaled = true
-    IndercanotTextBlah.TextSize = 24.000
+    IndercanotTextBlah.TextSize = 22.000
     IndercanotTextBlah.TextWrapped = true
 
     local UIGradient = Instance.new("UIGradient")
@@ -293,7 +293,7 @@ IndercanotTextBlah.Font = Enum.Font.GothamBold
 IndercanotTextBlah.Text = "Spam"
 IndercanotTextBlah.TextColor3 = Color3.fromRGB(255, 255, 255)
 IndercanotTextBlah.TextScaled = true
-IndercanotTextBlah.TextSize = 24.000
+IndercanotTextBlah.TextSize = 22.000
 IndercanotTextBlah.TextWrapped = true
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.75, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
@@ -1055,12 +1055,7 @@ end)
     	
 Far:AddToggle('Rage Farm',false,function(state)
     auto_win = state
-end)	
-
-Far:AddButton('Donate',function()
-        local gameId = 121501154939356  -- Ganti dengan GameID tujuan
-        game:GetService("TeleportService"):Teleport(gameId)
-end
+end)		
     	
 Deb:AddToggle('Visualise parry & spam',false,function(state)
     visualize_Enabled = state
@@ -1070,3 +1065,14 @@ Deb:AddButton('View Console',function()
     game.StarterGui:SetCore("DevConsoleVisible", true)
         wait()
 end)	
+
+local TeleportService = game:GetService("TeleportService")
+
+local placeId = 121501154939356
+
+Deb:AddButton('Donate Me!', function()
+    local player = game.Players.LocalPlayer
+    if player then
+        TeleportService:Teleport(placeId, player)
+    end
+end)
