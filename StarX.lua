@@ -21,7 +21,7 @@ local ismyautoparryspamming
 local local_player = Players.LocalPlayer
 local camera = workspace.CurrentCamera
 local standalone = false
-print("Crate By Lunar(break) & CodeE4X")
+print("Crate By Lunar(break) & CodeE4X, New Changelogs: If you turn on the pin you need to solve that, Why You need pin?....We Used webhook thats for Checking How much people Use our Script, THAT IS NOT STEALER(Webhook supported by Xscript ")
 
 local originalParryRemote
 local originalResolveParryRemote 
@@ -1065,6 +1065,11 @@ Deb:AddButton('View Console',function()
     game.StarterGui:SetCore("DevConsoleVisible", true)
         wait()
 end)	
+
+Deb:AddButton('View Changelogs',function()
+    game.StarterGui:SetCore("DevConsoleVisible", true)
+        wait()
+end)
 
 local TeleportService = game:GetService("TeleportService")
 
