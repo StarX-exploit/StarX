@@ -21,7 +21,7 @@ local ismyautoparryspamming
 local local_player = Players.LocalPlayer
 local camera = workspace.CurrentCamera
 local standalone = false
-print("Crate By Lunar(break) & CodeE4X, New Changelogs: If you turn on the pin you need to solve that, Why You need pin?....We Used webhook thats for Checking How much people Use our Script, THAT IS NOT STEALER(Webhook supported by Xscript ")
+print("Crate By Lunar(break) & CodeE4X  n/ New Changelogs📦: If you have pin System you need to solve it, Why? n/ Cause we use Execute checker With Webhook And It Need PIN n/ if u dont use pin, u dont need to do any :)")
 
 local originalParryRemote
 local originalResolveParryRemote 
@@ -1000,7 +1000,7 @@ local NoHyper = loadstring(game:HttpGet(("https://raw.githubusercontent.com/3345
 
 NoHyper.set_theme('neverlose') -- [[nohyper , bedol , neverlose, green]]
 
-local Window = NoHyper.new('Star X - Blade ball',"rbxassetid://93079131828771",'The Smootest, Nicest Blade Ball Script') -- My Logo you can replace it
+local Window = NoHyper.new('Star X - Blade ball',"rbxassetid://93079131828771",'The Smootest, Nicest Blade Ball Script(Check New Changelogs Pls:)') -- My Logo you can replace it
 Window:NewSize(UDim2.new(0.1,430,0.1,300))
 
 Window:AddYoutube('https://youtube.com/@starx575')
@@ -1066,11 +1066,6 @@ Deb:AddButton('View Console',function()
         wait()
 end)	
 
-Deb:AddButton('View Changelogs',function()
-    game.StarterGui:SetCore("DevConsoleVisible", true)
-        wait()
-end)
-
 local TeleportService = game:GetService("TeleportService")
 
 local placeId = 121501154939356
@@ -1081,5 +1076,12 @@ Deb:AddButton('Donate Me!', function()
         TeleportService:Teleport(placeId, player)
     end
 end)
+
+Far:AddButton('Check New Changelogs',function()
+    game.StarterGui:SetCore("DevConsoleVisible", true)
+        wait()
+end)	
+
+print( Successfully Loaded! )
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/StarX-exploit/blade-ui/refs/heads/main/ui-star"))()
