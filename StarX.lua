@@ -1082,6 +1082,4 @@ Far:AddButton('Check New Changelogs',function()
         wait()
 end)	
 
-print( Successfully Loaded! )
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/StarX-exploit/blade-ui/refs/heads/main/ui-star"))()
